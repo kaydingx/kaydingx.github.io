@@ -1,0 +1,129 @@
+/* element selector */
+
+body {
+  /* color: red; */
+  font-family: "Noto Sans TC", sans-serif;
+  background-image: url(./images/tommy.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+h1 {
+  color: olive;
+  font-size: 4rem;
+  background-color: rgba(244, 150, 150, 0.9);
+  text-align: right;
+  text-decoration: line-through;
+  letter-spacing: 10px;
+  /* width: 99vw; */
+  /* height: 50vh; */
+
+  border-bottom: 10px solid black;
+  border-radius: 20px;
+  margin: 0rem 4rem;
+}
+
+p {
+  line-height: 30px;
+  text-indent: 2rem;
+}
+/* confict test */
+h1 {
+  color: black;
+}
+
+h2 {
+  color: green;
+}
+/* test specificity */
+h2.three {
+  color: blueviolet;
+}
+
+.three {
+  color: white;
+}
+
+/* grouping element selector */
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* id selector */
+
+#test-id {
+  color: tomato;
+}
+
+/* class selector */
+.test-class {
+  color: rgb(87, 0, 7);
+}
+
+.large-text {
+  font-size: 32px;
+}
+
+/* element and class selector together */
+a.large-text {
+  font-size: 64px;
+  color: crimson;
+}
+
+/* descendant selector */
+div.link1 a {
+  color: red;
+}
+
+div.link2 a {
+  color: gray;
+}
+
+/* attribute selector */
+input[type="text"] {
+  color: red;
+}
+
+input[type="text"]:hover {
+  color: lightgray;
+}
+
+input[type="text"]:focus {
+  color: lightgreen;
+}
+
+p::before {
+  content: ">>>";
+  color: blue;
+}
+
+p::first-line {
+  font-size: 32px;
+}
+
+*::selection {
+  background-color: lightgreen;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.inner-box {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(221, 51, 51);
+}
+
+.overflowaa {
+  background-color: rgb(83, 77, 236);
+  height: 500px;
+  overflow-y: scroll;
+}
